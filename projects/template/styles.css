@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 3px;
+    background-color: #E9E9E9;
+    background-image: url("../template_images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    background-color: rgba(3,3,3,0.6);
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+section {
+    padding: 40px;
+}
+
+/* Portfolio items */
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    background-color: rgba(3,3,3,0.6);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    /* Adjust any other styles as needed for smaller screens */
+}
+
+/* Add the following CSS to center the content */
+.center-content {
+    text-align: center;
+
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+div.polaroid {
+
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px 30px 50px; 
+  
+}
+
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+}
+
+/* Reset some default styles */
+/* ... (previous CSS) ... */
+

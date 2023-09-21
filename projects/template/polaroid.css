@@ -1,0 +1,17 @@
+div.polaroid {
+  padding: 30px 15px 30px 15px;
+  border: 1px solid #BFBFBF;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(0, 0, 0, 0.1) 30px 30px 50px; 
+  
+}
+
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+}
