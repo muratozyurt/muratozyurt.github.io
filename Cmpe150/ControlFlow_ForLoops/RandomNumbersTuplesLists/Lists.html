@@ -67,10 +67,12 @@ Lists
 </div> 
 <p><a target="_blank" rel="noopener noreferrer" href="images/ColorSpiral.png"><img src="images/ColorSpiral.png" style="max-width: 100%;" /></a></p> 
 <p>(Note: The original source of the code sample is unknown, however you can find a reference url to this example in www<span></span>.geeksforgeeks.org/draw-colorful-spiral-web-using-turtle-graphics-in-python/)</p> 
+
+
 <div class="tcDivQuestion"> 
 <p>How can we populate a list from the values returned by the <code>range()</code>&nbsp;function?</p> 
 <div class="softdev4u-answer tcShowAnswer"> 
-<p>Using the star <code>*</code> notation as in:</p> 
+<p>Using the star /asterisk <code>*</code> operator as in the following to unpack the range result:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">my_list</span> <span class="pl-c1">=</span> [<span class="pl-c1">*</span><span class="pl-en">range</span>(<span class="pl-c1">20</span>)]
 
@@ -78,7 +80,11 @@ Lists
 
 <span class="pl-s1">my_second_list</span> <span class="pl-c1">=</span> [<span class="pl-c1">*</span><span class="pl-en">range</span>(<span class="pl-c1">10</span>,<span class="pl-c1">50</span>,<span class="pl-c1">3</span>)]
 
-<span class="pl-en">print</span>(<span class="pl-s1">my_second_list</span>)</pre>
+<span class="pl-en">print</span>(<span class="pl-s1">my_second_list</span>)
+
+
+
+</pre>
 </div> 
 <p>Another alternative is to use list comprehension:</p> 
 <div class="highlight highlight-source-python">
@@ -86,11 +92,22 @@ Lists
 <span class="pl-en">print</span>(<span class="pl-s1">my_list</span>)</pre>
 </div> 
 <p>which will retrieve a collection of numbers using the <code>range</code> function and assign twice as much as each <code>x</code> value to the list in the order they are iterated by the <code>for</code>&nbsp;statement. Note that this use of <code>for</code> does not have a body or colon (:).</p> 
+<br>
 <p>The following example appends multiples of 5 to the list from the range(100):</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">my_list</span> <span class="pl-c1">=</span> [<span class="pl-s1">x</span> <span class="pl-k">for</span> <span class="pl-s1">x</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">101</span>) <span class="pl-k">if</span> <span class="pl-s1">x</span> <span class="pl-c1">%</span> <span class="pl-c1">5</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span> ]
 <span class="pl-en">print</span>(<span class="pl-s1">my_list</span>)</pre>
 </div> 
+
+<br>
+
+<p>Receiving a string containing coordinates separated by commas :</p> 
+<div class="highlight highlight-source-python">
+ <pre><span class="pl-s1">coordinates</span> <span class="pl-c1">=</span> [<span class="pl-s1">int(c)</span> <span class="pl-k">for</span> <span class="pl-s1">c</span> <span class="pl-c1">in</span> <span class="pl-en">input</span>(<span class="pl-c1"></span>).<span class="pl-en">split</span>(',') ]
+<span class="pl-en">print</span>(<span class="pl-s1">coordinates</span>)</pre>
+</div> 
+
+<hr/>
 <p>If you need to add items to a list after a more complicated processing, you can use the <code>append</code>&nbsp;function as in</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">my_list</span> <span class="pl-c1">=</span> []
@@ -103,7 +120,10 @@ Lists
 </div> 
 <p>which will output <code>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]</code>&nbsp;.</p> 
 </div> 
-</div> 
+</div>
+
+
+
 <hr /> 
 <br /> 
 </div>

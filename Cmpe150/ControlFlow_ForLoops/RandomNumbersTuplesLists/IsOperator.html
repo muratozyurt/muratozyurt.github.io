@@ -20,7 +20,11 @@
         <script src='../../tcBundle/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
         
 <!--         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
- -->        <script>
+ -->        
+ 
+        <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+         
+         <script>
 
  			$(function() {
                 prettyPrint();
@@ -101,8 +105,50 @@ Control Flow: The <code>if</code>, <code>elif</code>, <code>else</code> Statemen
 <hr /> 
 <br /> 
 </div>
-			<!-- SOFTDEV4U POSTPAGE -->
-<!-- 		</div> -->
-	</div>
+
+
+<p>The <code>is</code> operator is not identical to <code>==</code> :</p>
+
+<pre>
+<zero-md>
+    <script type="text/markdown">
+```python
+
+my_dict1 = {"name": "John", "age": 36}
+my_dict2 = {"name": "John", "age": 36}
+
+print(my_dict1 == my_dict2)
+print(my_dict1 is my_dict2)
+
+my_dict2 = my_dict1
+
+print(my_dict1 == my_dict2)
+print(my_dict1 is my_dict2)
+
+
+```
+    </script>
+
+</zero-md>
+
+Output:
+
+True
+False
+True
+True
+
+</pre>
+
+			
+
+    <hr /> 
+    <br /> 
+    </div>
+                <!-- SOFTDEV4U POSTPAGE -->
+    <!-- 		</div> -->
+        </div>
+
 </body>
 </html>
+
