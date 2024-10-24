@@ -54,6 +54,13 @@ Truth Table
 <h2> <a id="precedence-in-boolean-statements" class="anchor" href="#precedence-in-boolean-statements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Precedence in boolean statements</h2> 
 <p>The order of precedence in boolean statements higher to lower precedence is as follows:</p> 
 <p><code>&quot;()&quot;</code>, <code>&quot;not&quot;</code>, <code>&quot;and&quot;</code>, and <code>&quot;or&quot;</code>.</p> 
+<p>Consider the logical expression <nobr><code>a or b and c</code></nobr> where the operand <code>&quot;b&quot;</code> is between the two operators. 
+Based on the precedence rules, it will be a part of the <code>&quot;and&quot;</code> operation.
+Therefore, <nobr><code>a or b and c</code></nobr> automatically becomes <nobr><code>a or (b and c)</code></nobr> .</p> 
+
+
+
+
 <table> 
  <tbody>
   <tr> 
