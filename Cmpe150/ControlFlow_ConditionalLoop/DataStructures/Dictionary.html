@@ -63,7 +63,7 @@ Dictionary
     data-softdev4u-linkTitle="Switch to Code (Simple Dictionary)"> 
 </div> 
 <p>The example above defines a bookshelf database by using the book name as the <span class="tcKeyw">key</span> and the shelf address as the dictionary <span class="tcKeyw">value</span> for each key. Each <span class="tcKeyw">key</span> needs to be a unique number, string literal, or object, however the same <span class="tcKeyw">value</span> can be used for multiple <span class="tcKeyw">keys</span>. The value can also be any data type such as numbers, string literals, lists, tuples, other dictionaries, etc.</p> 
-<p>There is no limitation on the type of <span class="tcKeyw">keys</span> or the respective <span class="tcKeyw">values</span> in Python. It is possible to use a mixed set of keys such as strings and numbers. Similarly the values can also be a mixed group of strings, numbers or data structures.</p> 
+<p>There is no limitation on the type of <span class="tcKeyw">keys</span> or the respective <span class="tcKeyw">values</span> in Python, as long as the key is of an immutable hashable type such as a string, numeric, or tuple, etc. Lists or custom classes cannot be used as keys in a dictionary since their contents may change over time yielding a different hash. It is possible to use a mixed set of keys such as strings and numbers. Similarly the values can also be a mixed group of strings, numbers or data structures.</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">dictionary_of_everything</span> <span class="pl-c1">=</span> {
 

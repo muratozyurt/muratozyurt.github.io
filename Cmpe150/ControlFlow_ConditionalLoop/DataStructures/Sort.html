@@ -47,35 +47,35 @@ Sorting
  <pre>
 <span class="pl-k">import</span> <span class="pl-s1">random</span>
  
-<span class="pl-s1">list</span> <span class="pl-c1">=</span> []
+<span class="pl-s1">my_list</span> <span class="pl-c1">=</span> []
 
 <span class="pl-k">for</span> <span class="pl-s1">_</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">10</span>):
     <span class="pl-s1">number</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">0</span>, <span class="pl-c1">100</span>)
-    <span class="pl-s1">list</span>.<span class="pl-en">append</span>(<span class="pl-s1">number</span>)
+    <span class="pl-s1">my_list</span>.<span class="pl-en">append</span>(<span class="pl-s1">number</span>)
  
-<span class="pl-en">print</span> (<span class="pl-s1">list</span>) </pre>
+<span class="pl-en">print</span> (<span class="pl-s1">my_list</span>) </pre>
 </div> 
 <div class="softdev4u-answer tcShowAnswer"> 
 <div class="highlight highlight-source-python">
  <pre>
 <span class="pl-k">import</span> <span class="pl-s1">random</span>
 
-<span class="pl-s1">list</span> <span class="pl-c1">=</span> []
+<span class="pl-s1">my_list</span> <span class="pl-c1">=</span> []
 
 <span class="pl-k">for</span> <span class="pl-s1">_</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">10</span>):
     <span class="pl-s1">number</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">0</span>, <span class="pl-c1">100</span>)
-    <span class="pl-s1">list</span>.<span class="pl-en">append</span>(<span class="pl-s1">number</span>)
+    <span class="pl-s1">my_list</span>.<span class="pl-en">append</span>(<span class="pl-s1">number</span>)
 
-<span class="pl-en">print</span>(<span class="pl-s1">list</span>)
+<span class="pl-en">print</span>(<span class="pl-s1">my_list</span>)
 
-<span class="pl-k">for</span> <span class="pl-s1">index</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-en">len</span>(<span class="pl-s1">list</span>)):
-    <span class="pl-k">for</span> <span class="pl-s1">secondary_index</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-s1">index</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span>, <span class="pl-en">len</span>(<span class="pl-s1">list</span>)):
-        <span class="pl-k">if</span> (<span class="pl-s1">list</span>[<span class="pl-s1">index</span>] <span class="pl-c1">&gt;</span> <span class="pl-s1">list</span>[<span class="pl-s1">secondary_index</span>]):
-            <span class="pl-s1">temp</span> <span class="pl-c1">=</span> <span class="pl-s1">list</span>[<span class="pl-s1">index</span>]
-            <span class="pl-s1">list</span>[<span class="pl-s1">index</span>] <span class="pl-c1">=</span> <span class="pl-s1">list</span>[<span class="pl-s1">secondary_index</span>]
-            <span class="pl-s1">list</span>[<span class="pl-s1">secondary_index</span>] <span class="pl-c1">=</span> <span class="pl-s1">temp</span>
+<span class="pl-k">for</span> <span class="pl-s1">index</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-en">len</span>(<span class="pl-s1">my_list</span>)):
+    <span class="pl-k">for</span> <span class="pl-s1">secondary_index</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-s1">index</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span>, <span class="pl-en">len</span>(<span class="pl-s1">my_list</span>)):
+        <span class="pl-k">if</span> (<span class="pl-s1">my_list</span>[<span class="pl-s1">index</span>] <span class="pl-c1">&gt;</span> <span class="pl-s1">my_list</span>[<span class="pl-s1">secondary_index</span>]):
+            <span class="pl-s1">temp</span> <span class="pl-c1">=</span> <span class="pl-s1">my_list</span>[<span class="pl-s1">index</span>]
+            <span class="pl-s1">my_list</span>[<span class="pl-s1">index</span>] <span class="pl-c1">=</span> <span class="pl-s1">my_list</span>[<span class="pl-s1">secondary_index</span>]
+            <span class="pl-s1">my_list</span>[<span class="pl-s1">secondary_index</span>] <span class="pl-c1">=</span> <span class="pl-s1">temp</span>
 
-<span class="pl-en">print</span>(<span class="pl-s1">list</span>)</pre>
+<span class="pl-en">print</span>(<span class="pl-s1">my_list</span>)</pre>
 </div> 
 <div class="softdev4u-openExampleDiv" 
     data-softdev4u-language="Python" 
