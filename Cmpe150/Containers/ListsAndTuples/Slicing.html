@@ -86,8 +86,20 @@ Slicing in Lists and Tuples
 <pre><code>[1, 3, 15, 16, 17, 7]
 </code></pre> 
 <p>What happened in this example is that we wanted to insert a list of three items into a slice of length two. The existing elements corresponding to the slice are replaced with the new values and the remaining items in the additional list are inserted after the previous items, shifting the elements in the original list towards the end of that list.</p> 
-<hr /> 
+
+
+<p>How about the following?</p>
+<div class="highlight highlight-source-python">
+ <pre><span class="pl-s1">temp</span> <span class="pl-c1">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">3</span>, <span class="pl-c1">5</span>, <span class="pl-c1">6</span>, <span class="pl-c1">7</span>]
+
+<span class="pl-s1">temp</span>[<span class="pl-c1">2</span>:<span class="pl-c1">4</span>] <span class="pl-c1">=</span> [<span class="pl-c1">15</span>]
+
+<span class="pl-en">print</span>(<span class="pl-s1">temp</span>)</pre>
+</div> 
 <br /> 
+<br /> 
+
+<hr /> 
 </div>
 			<!-- SOFTDEV4U POSTPAGE -->
 <!-- 		</div> -->
