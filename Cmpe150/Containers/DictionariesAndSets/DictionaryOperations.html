@@ -77,6 +77,35 @@ Dictionary Operations
 {20009001: 'Alice', 20009002: 'Claire', 20009003: 'Joker', 20009004: 'Spiderman', 20009005: 'Batman'}
 {20009001: 'Alice', 20009002: 'Claire', 20009003: 'Joker', 20009004: 'Spiderman', 20009005: 'Batman', 20009006: 'Ghida'}
 </code></pre> 
+
+<br>
+
+<p>Please check the concepts of <code>shallow copy</code> and <code>deep copy</code> from onine sources such as <a href="https://docs.python.org/3/library/copy.html" target="_blank">https://docs.python.org/3/library/copy.html</a> </p>
+<pre><code class="lang-python">the_list = [<span class="hljs-string">"first"</span>, <span class="hljs-string">"second"</span>, <span class="hljs-string">"third"</span>]
+
+my_original_dictionary = {<span class="hljs-string">"numeric"</span>: <span class="hljs-number">10</span> , <span class="hljs-string">"string"</span>: <span class="hljs-string">"my_string"</span>, <span class="hljs-string">"my_list"</span>: the_list}
+
+my_copy = my_original_dictionary.copy()
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(my_copy)</span></span>
+
+my_original_dictionary.update({<span class="hljs-string">"numeric"</span>: <span class="hljs-number">20</span>})
+
+
+my_list = my_original_dictionary.get(<span class="hljs-string">"my_list"</span>)
+my_list.append(<span class="hljs-string">"fourth"</span>)
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(my_list)</span></span>
+
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(my_original_dictionary)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(my_copy)</span></span>
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(my_list)</span></span>
+</code></pre>
+
+
+
 <p>Constructing a new dictionary using a list of tuples:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">st_list</span> <span class="pl-c1">=</span> [ (<span class="pl-s">&quot;Alice&quot;</span>,<span class="pl-c1">20</span>), (<span class="pl-s">&quot;Michael&quot;</span>,<span class="pl-c1">19</span>)]

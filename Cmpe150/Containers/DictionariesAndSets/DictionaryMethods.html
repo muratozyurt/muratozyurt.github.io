@@ -95,8 +95,26 @@ Traceback (most recent call last):
 NameError: name 'balance_dict' is not defined
 
 </code></pre> 
+
+<pre><code class="lang-python">balance_dict = {
+<span class="hljs-string">"Alice"</span>:<span class="hljs-number">1345.345</span>,
+<span class="hljs-string">"Claire"</span>:<span class="hljs-number">15642.432</span>,
+<span class="hljs-string">"Joker"</span>:<span class="hljs-number">14542.782</span>,
+<span class="hljs-string">"Spiderman"</span>:<span class="hljs-number">1234366.4352</span>}
+
+balance_dict.pop(<span class="hljs-string">"Spiderman"</span>)
+<span class="hljs-selector-tag">del</span> balance_dict[<span class="hljs-string">"Claire"</span>]
+
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(balance_dict)</span></span>
+
+<span class="hljs-selector-tag">del</span> balance_dict[<span class="hljs-string">"Spiderman"</span>]
+
+<span class="hljs-selector-id">#balance_dict</span>.pop(<span class="hljs-string">"Batman"</span>)
+</code></pre>
+
+
 <hr /> 
-<p>Items can be removed from a set by using the <code>remove()</code>&nbsp;function, however <code>pop()</code> method may remove a random element from the set each time the code is executed, be careful when using:</p> 
+<p>Items can be removed from a <code>set</code> by using the <code>remove()</code>&nbsp;function, however <code>pop()</code> method may remove a random element from the set each time the code is executed, be careful when using:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">students</span> <span class="pl-c1">=</span> {
 <span class="pl-s">&quot;Alice&quot;</span>,

@@ -86,7 +86,7 @@ Lists
 
 </pre>
 </div> 
-<p>Another alternative is to use list comprehension:</p> 
+<p>Another alternative is to use list comprehension with a <code>generator expression</code>:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">my_list</span> <span class="pl-c1">=</span> [<span class="pl-c1">2</span><span class="pl-c1">*</span><span class="pl-s1">x</span> <span class="pl-k">for</span> <span class="pl-s1">x</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">10</span>,<span class="pl-c1">50</span>,<span class="pl-c1">2</span>) ]
 <span class="pl-en">print</span>(<span class="pl-s1">my_list</span>)</pre>
@@ -108,6 +108,16 @@ Lists
 </div> 
 
 <hr/>
+
+
+The generator expression does not work with tuples in means of comprehension, you can use <code>tuple()</code> constructor instead: 
+<pre>
+
+<span class="pl-s1">my_tuple</span> <span class="pl-c1">=</span> tuple(<span class="pl-s1">x</span> <span class="pl-k">for</span> <span class="pl-s1">x</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">101</span>) <span class="pl-k">if</span> <span class="pl-s1">x</span> <span class="pl-c1">%</span> <span class="pl-c1">5</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span> )
+</pre>
+
+<hr/>
+
 <p>If you need to add items to a list after a more complicated processing, you can use the <code>append</code>&nbsp;function as in</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-s1">my_list</span> <span class="pl-c1">=</span> []
